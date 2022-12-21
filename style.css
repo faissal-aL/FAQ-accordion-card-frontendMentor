@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+/*font name : Kumbh Sans  weight 400 and 700   */
+html{
+    min-height: 100%;
+}
+body{
+    font-size: 0.8rem;
+    font-family: kumbh sans;
+    background-image: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+}
+main{
+    display: flex;
+    background-color: white;
+    border-radius: 20px;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+h1{
+    font-size: 2.4rem;
+    margin: 50px 10% 40px 0%;
+}
+h2{
+    display: flex;
+    align-items: center;
+    margin: 0% 10% 0% 0%;
+    font-size: 1rem;
+    font-weight: 400;
+    color:hsl(237, 12%, 33%);
+
+}
+h2:hover{
+    cursor: pointer !important;
+    color: hsl(14, 88%, 65%) !important;
+}
+p{
+    font-size: 0.9rem;
+    display: none;
+    line-height: 1.3rem;
+    margin: 10px 10% 0% 0%;
+    color: hsl(240, 6%, 50%);
+}
+hr{
+    margin: 15px 10% 15px 0%;
+    border: none;
+    border-top: 2px solid hsl(240, 5%, 91%);
+}
+.text{
+    width: 50%;
+    margin-right: 0px;
+    margin-left: auto;
+}
+.arrow_icon{
+    rotate: 180;
+    height: 7px;
+    width: 0.6rem;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+/* images part     */
+
+.container_image{
+    background-repeat: no-repeat;
+    background-position-x: 125%;
+    background-position-y: 60%;
+    background-size:170%;
+    background-image: url(images/pattern-desktop.svg);
+
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+}
+.cont_container_image{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+    position: relative;
+  
+}
+.third_container{
+    overflow: hidden;
+}
+.woman_image{  
+    margin-top: 0px;  
+    margin-left: -18%;
+    width: 100%;
+}
+
+.box_image{
+    position: absolute;
+    left: -20%;
+    top: 38%;
+    width: 40%;
+    z-index: 3;
+}
+.mobile_image{
+    display: none;
+}
+
+@media screen and (width<700px) {
+    main{
+        width: 90%;
+    }
+}
+@media screen and (width<400px){
+    body{
+        margin-top: 45%;
+    }
+    h1{
+        margin-bottom: 1.7rem;
+        text-align: center;
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 0.85rem;
+    }
+    p{
+        font-size: 0.75rem;
+    }
+    .container_image{
+        display: none;
+    }
+    .text{
+        width: 100%;
+        margin-left: 10%;
+        background-repeat: no-repeat;
+        background-position-y: -2%;
+        background-size:90%; 
+        background-image: url(images/bg-pattern-mobile.svg);
+        padding-bottom: 2rem;
+    }
+    .mobile_image{
+        width: 90%;
+        margin: -42% 0% 0% 0%;
+        display: flex;
+    }
+}
